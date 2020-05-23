@@ -16,7 +16,9 @@ struct ContentView: View {
             ForEach(viewModel.card) { card in
                 CardView(card: card)
             }
-        }
+        }.padding()
+            .foregroundColor(Color.orange)
+            .font(Font.largeTitle)
     }
 }
 
